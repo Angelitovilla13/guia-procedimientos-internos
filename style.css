@@ -1,0 +1,194 @@
+/* RESET GENERAL */
+* {
+  box-sizing: border-box;
+}
+
+/* FONDO APP */
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CONTENEDOR APP */
+.app-wrapper {
+  width: 100%;
+  max-width: 420px;
+  min-height: 100vh;
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(20px);
+  padding: 30px 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  box-shadow: 0 20px 50px rgba(0,0,0,.4);
+  animation: fadeIn .6s ease;
+}
+
+/* ANIMACIÓN ENTRADA */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+/* HEADER */
+.header {
+  margin-bottom: 30px;
+}
+
+/* ROL */
+.role {
+  opacity: .8;
+  font-size: 0.9rem;
+}
+
+/* TITULOS */
+.title {
+  font-weight: 800;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.section-title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* BOTONES */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* BOTÓN APP */
+.app-button {
+  background: rgba(255,255,255,0.9);
+  color: #333;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 14px;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 10px 20px rgba(0,0,0,.25);
+  transition: all .25s ease;
+}
+
+.app-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0,0,0,.35);
+}
+
+/* BOTÓN LOGOUT */
+.logout {
+  background: #ffdddd;
+  color: #b00000;
+}
+
+/* BOTÓN CERRAR / BACK */
+.close-btn,
+.back-btn {
+  position: absolute;
+  top: 20px;
+  background: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 5px 15px rgba(0,0,0,.3);
+}
+
+.close-btn {
+  right: 20px;
+}
+
+.back-btn {
+  left: 20px;
+}
+
+/* FORMULARIOS */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.custom-input {
+  border-radius: 15px;
+  padding: 12px;
+  border: none;
+  width: 100%;
+  background: rgba(255,255,255,0.9);
+}
+
+/* BOTÓN SIGUIENTE */
+.next-btn {
+  background: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(0,0,0,.3);
+  transition: .2s;
+}
+
+.next-btn:hover {
+  transform: scale(1.05);
+}
+
+/* TARJETAS */
+.procedimiento-card {
+  background: rgba(255,255,255,0.15);
+  padding: 15px;
+  border-radius: 20px;
+  margin-top: 15px;
+  backdrop-filter: blur(10px);
+}
+
+/* PASOS */
+.paso {
+  margin-top: 15px;
+  background: rgba(255,255,255,0.15);
+  padding: 12px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+/* IMÁGENES */
+.paso img {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+/* LOGO */
+.logo {
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* SCROLL BONITO */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.4);
+  border-radius: 10px;
+}
+
+.login-title-big{
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    text-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
