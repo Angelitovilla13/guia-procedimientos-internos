@@ -1,0 +1,12 @@
+# Configuración sensible
+config.php
+
+# Carpeta de imágenes
+/uploads/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos temporales
+*.log
